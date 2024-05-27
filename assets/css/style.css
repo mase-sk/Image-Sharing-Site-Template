@@ -8,3 +8,85 @@
     License: You are not allowed to use this design and code
              or any part of it in your own project!
 */
+
+/* Remove Ugly Bootstrap Styling */
+
+button, ::after, ::before {
+    box-sizing: border-box;
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+  
+.container-row {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    src: url(../fonts/Poppins/Poppins-Black.ttf) format(ttf);
+    font-display: swap;
+}
+
+/* Basic HTML Things */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* Body Styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Variables */
+
+:root {
+    /* Shapes & Sizes */
+    --default-border-radius: .25rem;
+    --default-font-size: 1rem;
+
+    /* Colors - Global */
+    --href-color: rgb(254, 0, 0); /* Special */
+
+    /* Colors - Light Mode */
+    --main-light-color: rgb(255, 255, 255); /* 60% */
+    --secondary-light-color: rgb(178, 177, 231); /* 30% */
+    --accent-light-color: rgb(122, 127, 128); /* 10% */
+
+    /* Colors - Dark Mode */
+    --main-dark-color: rgb(28, 38, 52); /* 60% */
+    --secondary-dark-color: rgb(13, 19, 27); /* 30% */
+    --accent-dark-color: rgb(74, 79, 86); /* 10% */
+}
+
+/* 
+   Elements 
+   You can change shape, sizes etc here
+*/
+
+/* 
+   Elements - Light Mode 
+   You can change colors for light mode here
+*/
+html.light-mode, body {
+
+}
+
+/* 
+   Elements - Dark Mode 
+   You can change colors for dark mode here
+*/
+
+html.dark-mode, body {
+ background-color: var(--main-dark-color);
+}
