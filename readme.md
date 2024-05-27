@@ -1,8 +1,12 @@
+Demo of this project can be found here: https://mase.sk/projects/image-sharing-site-template/
+
+Alternatively you can use Github link here: https://mase-sk.github.io/Image-Sharing-Site-Template/
+
 
 What i have done in this project?
 
 - [x] Initial commit (Basic folder structure, First files)
-- [ ] Libraries (Bootstrap, Fontawesome, etc.)
+- [x] Libraries (Bootstrap, Fontawesome)
 - [ ] Etc...
 
 What will be done and what's completed for every page created?
