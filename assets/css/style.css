@@ -85,9 +85,10 @@ body {
     /* Colors - Global */
     --default-action-btn: rgb(247, 102, 97);
     --default-action-btn-hover: rgb(248, 84, 78); 
-    --href-color: rgb(221, 221, 221); /* Link */
-    --href-color-hover: rgb(204, 204, 204);
-    --href-color-red-hover: rgb(254, 0, 0); /* Link Hover */
+    --href-color: rgb(175, 175, 175); /* Link */
+    --href-color-hover: rgb(216, 216, 216);
+    --href-color-red-hover: rgb(246, 112, 99); /* Link Hover */
+    --white-color: rgb(255, 255, 255);
 
     /* Colors - Light Mode */
     --main-light-color: rgb(255, 255, 255); /* 60% */
@@ -97,7 +98,7 @@ body {
     /* Colors - Dark Mode */
     --main-dark-color: rgb(28, 38, 52); /* 60% */
     --secondary-dark-color: rgb(13, 19, 27); /* 30% */
-    --darker-secondary-dark-color: rgb(9, 13, 19);
+    --hover-secondary-dark-color: rgb(17, 25, 36);
     --accent-dark-color: rgb(74, 79, 86); /* 10% */
     --border-dark-color: rgb(23, 34, 48);
 }
@@ -150,12 +151,21 @@ body {
 .dropdown-custom {
     outline: 0;
 }
+
 .dropdown-item-custom {
     text-decoration: none;
 }
 
 .user-dropdown {
     width: 15rem;
+}
+
+.mobile-dropdown {
+    width: 15rem;
+}
+
+.mobile-dropdown-item {
+    line-height: 2.5rem;
 }
 
 /* Buttons */
@@ -201,11 +211,17 @@ html.dark-mode body {
 
 .dark-mode .main-navbar {
     background-color: var(--secondary-dark-color);
-    color: var(--accent-dark-color);
+    color: var(--href-color);
 }
 
 .dark-mode .main-navbar-avatar {
     border: 1px solid var(--border-dark-color);
+}
+
+.dark-mode .nav-link-custom:hover,
+.dark-mode .nav-link-custom:active,
+.dark-mode .nav-link-custom:focus {
+    color: var(--href-color-hover) !important;
 }
 
 /* Dropdowns */
@@ -222,8 +238,7 @@ html.dark-mode body {
 .dark-mode .dropdown-item-custom:hover,
 .dark-mode .dropdown-item-custom:active,
 .dark-mode .dropdown-item-custom:focus{
-    color: red;
-    background-color: var(--secondary-dark-color) !important;
+    background-color: var(--hover-secondary-dark-color) !important;
 }
 
 /* Buttons */
@@ -232,6 +247,12 @@ html.dark-mode body {
     color: var(--href-color);
 }
 
+.dark-mode .btn-custom:hover a,
+.dark-mode .btn-custom:active a, 
+.dark-mode .btn-custom:focus a{
+    color: var(--href-color-hover);
+}
+
 .dark-mode .btn-upload {
-    color: var(--href-color);
+    color: var(--white-color);
 }

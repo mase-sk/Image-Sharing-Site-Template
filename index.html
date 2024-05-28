@@ -17,164 +17,209 @@
 <body>
     <div id="body-canvas">
         <!-- Main Navbar -->
-        <nav class="navbar navbar-expand shadow-sm fixed-top main-navbar">
-            <div class="container-fluid container-lg">
-                <div class="row flex-grow-1 align-items-center">
-                    <!-- Main Navbar -> Left Part -->
-                    <div class="col-10 col-sm-10 col-md-5 col-lg-3 col-xl-2 col-xxl-2 main-navbar-left">
-                        <a href="./index.html">
-                            <img src="./assets/img/dummy-logo.png" alt="Logo">
-                        </a>
-                    </div>
-                    <!-- Main Navbar -> Center Part -->
-                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-4 col-xl-5 d-none d-lg-block main-navbar-center">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-link-custom">
-                                    Images
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-link-custom">
-                                    Albums
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-link-custom">
-                                    Gifs
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-link-custom">
-                                    Videos
-                                </a>
-                            </li>
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link nav-link-custom" id="DropDown_MoreCategories" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
-                                <ul class="dropdown-menu shadow-sm dropdown-custom border-radius" aria-labelledby="DropDown_MoreCategories">
-                                    <li class="dropdown-item dropdown-item-custom">
-                                        <a href="#" class="nav-link nav-link-custom">
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item dropdown-item-custom">
-                                        <a href="#" class="nav-link nav-link-custom">
-                                            Link 2
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Main Navbar -> Right Part -->
-                    <div class="col-xs-1 col-sm-1 col-md-6 col-lg-5 col-xl-5 col-xxl-5 d-none d-md-block p-0">
-                        <div class="row m-0">
-                            <!-- Navigation Buttons -->
-                            <div class="col-sx-1 col-sm-1 col-md-9 col-lg-7 p-0">
-                                <div class="btn-group float-end">
-                                    <button class="btn btn-link btn-custom">
-                                        <a href="#">
-                                            <i class="fa-solid fa-house"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn btn-link btn-custom">
-                                        <a href="#">
-                                            <i class="fa-solid fa-compass"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn btn-link btn-custom">
-                                        <a href="#">
-                                            <i class="fa-solid fa-heart-pulse"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn btn-link btn-custom">
-                                        <a href="#">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </a>
+        <header>
+            <nav class="navbar navbar-expand shadow-sm fixed-top main-navbar">
+                <div class="container-fluid container-lg">
+                    <div class="row flex-grow-1 align-items-center">
+                        <!-- Main Navbar -> Left Part -->
+                        <div class="col-10 col-sm-10 col-md-5 col-lg-3 col-xl-2 col-xxl-2 main-navbar-left">
+                            <a href="./index.html">
+                                <img src="./assets/img/dummy-logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <!-- Main Navbar -> Center Part -->
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-4 col-xl-5 d-none d-lg-block main-navbar-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-custom">
+                                        Images
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-custom">
+                                        Albums
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-custom">
+                                        Gifs
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-link-custom">
+                                        Videos
+                                    </a>
+                                </li>
+                                <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link nav-link-custom" id="DropDown_MoreCategories" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </a>
+                                    <ul class="dropdown-menu shadow-sm dropdown-custom border-radius" aria-labelledby="DropDown_MoreCategories">
+                                        <li class="dropdown-item dropdown-item-custom">
+                                            <a href="#" class="nav-link nav-link-custom">
+                                                Link 1
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item dropdown-item-custom">
+                                            <a href="#" class="nav-link nav-link-custom">
+                                                Link 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Main Navbar -> Right Part -->
+                        <div class="col-xs-1 col-sm-1 col-md-6 col-lg-5 col-xl-5 col-xxl-5 d-none d-md-block p-0">
+                            <div class="row m-0">
+                                <!-- Navigation Buttons -->
+                                <div class="col-sx-1 col-sm-1 col-md-9 col-lg-7 p-0">
+                                    <div class="btn-group float-end">
+                                        <button class="btn btn-link btn-custom">
+                                            <a href="#">
+                                                <i class="fa-solid fa-house"></i>
+                                            </a>
+                                        </button>
+                                        <button class="btn btn-link btn-custom">
+                                            <a href="#">
+                                                <i class="fa-solid fa-compass"></i>
+                                            </a>
+                                        </button>
+                                        <button class="btn btn-link btn-custom">
+                                            <a href="#">
+                                                <i class="fa-solid fa-heart-pulse"></i>
+                                            </a>
+                                        </button>
+                                        <button class="btn btn-link btn-custom">
+                                            <a href="#">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Upload Button -->
+                                <div class="col-4 col-md-2 col-lg-4 d-none d-md-block d-lg-block">
+                                    <button class="btn btn-upload col-12 border-radius">
+                                        <i class="fa-solid fa-square-plus"></i>
                                     </button>
                                 </div>
+                                <!-- User Menu -->
+                                <div class="col-xs-1 col-sm-1 col-md-1 d-flex justify-content-start p-0">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropstart">
+                                            <a href="#" div="DropDown_UserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/img/dummy-avatar.gif" alt="User Avatar" class="main-navbar-avatar border-radius">
+                                            </a>
+                                            <ul class="dropdown-menu shadow-sm dropdown-custom user-dropdown border-radius" aria-labelledby="DropDown_UserMenu">
+                                                <li class="dropdown-item dropdown-item-custom">
+                                                    <a href="#" class="nav-link nav-link-custom">
+                                                        <div class="row">
+                                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                                <i class="fa-solid fa-user"></i>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                Profile
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item dropdown-item-custom">
+                                                    <a href="#" class="nav-link nav-link-custom">
+                                                        <div class="row">
+                                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                                <i class="fa-solid fa-gear"></i>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                Settings
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item dropdown-item-custom">
+                                                    <a href="#" class="nav-link nav-link-custom">
+                                                        <div class="row">
+                                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                                <i class="fa-solid fa-life-ring"></i>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                Helpcenter
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li class="dropdown-item dropdown-item-custom">
+                                                    <a href="#" class="nav-link nav-link-custom">
+                                                        <div class="row">
+                                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                Logout
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <!-- Upload Button -->
-                            <div class="col-4 col-md-2 col-lg-4 d-none d-md-block d-lg-block">
-                                <button class="btn btn-upload col-12 border-radius">
-                                    <i class="fa-solid fa-square-plus"></i>
+                        </div>
+                        <!-- Side Menu -> Other devices -->
+                        <div class="col-2 d-md-none d-flex justify-content-end">
+                            <div class="dropdown dropstart">
+                                <button class="btn btn-link btn-custom fs-3" type="button" id="DropDown_MobileMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bars"></i>
                                 </button>
-                            </div>
-                            <!-- User Menu -->
-                            <div class="col-xs-1 col-sm-1 col-md-1 d-flex justify-content-start p-0">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item dropstart">
-                                        <a href="#" div="DropDown_UserMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="./assets/img/dummy-avatar.gif" alt="User Avatar" class="main-navbar-avatar border-radius">
+                                <ul class="dropdown-menu shadow-sm dropdown-custom mobile-dropdown border-radius" aria-labelledby="DropDown_MobileMenu">
+                                    <li class="dropdown-item dropdown-item-custom mobile-dropdown-item">
+                                        <a href="#" class="nav-link nav-link-custom">
+                                            <div class="row">
+                                                <div class="col-3 d-flex justify-content-center align-items-center dropdown-icon">
+                                                    <i class="fa-solid fa-cookie"></i>
+                                                </div>
+                                                <div class="col-9">
+                                                    Cookies
+                                                </div>
+                                            </div>
                                         </a>
-                                        <ul class="dropdown-menu shadow-sm dropdown-custom user-dropdown border-radius" aria-labelledby="DropDown_UserMenu">
-                                            <li class="dropdown-item dropdown-item-custom">
-                                                <a href="#" class="nav-link nav-link-custom">
-                                                    <div class="row">
-                                                        <div class="col-3 d-flex justify-content-center align-items-center">
-                                                            <i class="fa-solid fa-user"></i>
-                                                        </div>
-                                                        <div class="col-9">
-                                                            Profile
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item dropdown-item-custom">
-                                                <a href="#" class="nav-link nav-link-custom">
-                                                    <div class="row">
-                                                        <div class="col-3 d-flex justify-content-center align-items-center">
-                                                            <i class="fa-solid fa-gear"></i>
-                                                        </div>
-                                                        <div class="col-9">
-                                                            Settings
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item dropdown-item-custom">
-                                                <a href="#" class="nav-link nav-link-custom">
-                                                    <div class="row">
-                                                        <div class="col-3 d-flex justify-content-center align-items-center">
-                                                            <i class="fa-solid fa-life-ring"></i>
-                                                        </div>
-                                                        <div class="col-9">
-                                                            Helpcenter
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li class="dropdown-item dropdown-item-custom">
-                                                <a href="#" class="nav-link nav-link-custom">
-                                                    <div class="row">
-                                                        <div class="col-3 d-flex justify-content-center align-items-center">
-                                                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                                        </div>
-                                                        <div class="col-9">
-                                                            Logout
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    </li>
+                                    <li class="dropdown-item dropdown-item-custom mobile-dropdown-item">
+                                        <a href="#" class="nav-link nav-link-custom">
+                                            <div class="row">
+                                                <div class="col-3 d-flex justify-content-center align-items-center dropdown-icon">
+                                                    <i class="fa-solid fa-user-secret"></i>
+                                                </div>
+                                                <div class="col-9">
+                                                    Privacy Policy
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item dropdown-item-custom mobile-dropdown-item">
+                                        <a href="#" class="nav-link nav-link-custom">
+                                            <div class="row">
+                                                <div class="col-3 d-flex justify-content-center align-items-center dropdown-icon">
+                                                    <i class="fa-solid fa-paper-plane"></i>
+                                                </div>
+                                                <div class="col-9">
+                                                    Contact Us
+                                                </div>
+                                            </div>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Side Menu -> Other devices -->
-                    <div class="col-2 d-md-none d-flex justify-content-end">
-                        Hidden
-                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
+        
         <!-- Bottom Sidebar -->
     </div>
     <!-- Scripts (Defer load)-->
