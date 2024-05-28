@@ -69,3 +69,5 @@ const autoSwitchTime = (summerStartHour, summerEndHour, winterStartHour, winterE
 // 21:00-06:00 (summer)
 // 20:00-07:00 (winter)
 autoSwitchTime(21, 6, 20, 7);
+
+
