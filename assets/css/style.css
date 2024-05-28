@@ -140,6 +140,14 @@ body {
     overflow: hidden;
 }
 
+/* App Navbar */
+
+.app-navbar {
+    height: 3.5rem;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
 /* Nav links */
 
 .nav-link-custom {
@@ -224,6 +232,13 @@ html.dark-mode body {
     color: var(--href-color-hover) !important;
 }
 
+/* App Navbar */
+
+.dark-mode .app-navbar {
+    border-top: 1px solid var(--border-dark-color);
+    background-color: var(--secondary-dark-color);
+}
+
 /* Dropdowns */
 
 .dark-mode .dropdown-custom {
@@ -255,4 +270,23 @@ html.dark-mode body {
 
 .dark-mode .btn-upload {
     color: var(--white-color);
+}
+
+/*
+    Shrink Animation
+*/
+
+.container-lg {
+    flex-shrink: 1;
+    transition: all 400ms ease;
+}
+
+.container {
+    flex-shrink: 1;
+    transition: all 400ms ease;
+}
+
+.container-fluid {
+    flex-grow: 1;
+    transition: all 400ms ease;
 }
